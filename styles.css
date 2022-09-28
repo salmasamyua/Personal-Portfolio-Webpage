@@ -1,0 +1,229 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.4;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        @media (max-width: 75em) {
+            html {
+                font-size: 60%;
+            }
+            }
+
+            @media (max-width: 61.25em) {
+            html {
+                font-size: 58%;
+            }
+            }
+
+            @media (max-width: 28.75em) {
+            html {
+                font-size: 55%;
+            }
+            #navbar {
+                justify-content: center;
+            }
+
+            .nav-list {
+                margin: 0 1rem;
+            }
+            #projects h2 {
+                font-size: 4rem;
+            }
+            #contact > h2 {
+                font-size: 4rem;
+            }
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            }
+            @media (max-width: 30.625em) {
+                #projects {
+                    padding: 6rem 1rem;
+                }
+
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                }
+}
+        #navbar{
+            position: fixed;
+            width: 100%;
+            text-align: right;
+            background-color: #be3144;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        }
+        #navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 2rem;
+            padding: 2rem;
+        }
+        #navbar ul li:hover {
+            background-color: #45567d;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.2rem;
+        }
+        #welcome-section{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #000;
+            background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        }
+        h1, h2{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        h1{
+            font-size: 6rem;
+        }
+        h2{
+            font-size: 4.2rem;
+        }
+        #welcome-section p{
+            font-style: italic;
+            color: #be3144;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+        #projects{
+            height: max-content;
+            background-color: #45567d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 10rem 2rem;
+        }
+        .project{
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        #projects h2{
+            max-width: 640px;
+            margin: 0 auto 6rem auto;
+            border-bottom: 0.2rem solid #fff;
+        }
+        #projects-grid{
+            margin: 0 auto;
+            margin-bottom: 6rem;
+            width: 100%;
+            max-width: 1280px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 4rem;
+        }
+        a{
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+        .project-tile{
+            text-align: center;
+            font-size: 2rem;
+            padding: 2rem 0.5rem;
+            background-color: #303841;
+        }
+        img{
+            width: 100%;
+            height: calc(100% - 6.8rem);
+            object-fit: cover;
+        }
+        .project {
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            }
+        span{
+            color: #303841;
+            transition: color 0.3s ease-out;
+        }
+        .project:hover span{
+            color: #ff7f50;
+        }
+        .showall{
+            background-color: #303841;
+            padding: 1rem 2rem;
+            border-radius: 2px;
+        }
+        .showall:hover{
+            background-color: #be3144;
+        }
+        .showall:hover > i{
+            transform: translateX(2px);
+        }
+        .showall > i{
+            padding-left: 10px;
+            transform: translateX(0);
+            transition: transform 0.3s ease-out;
+        }
+        #contact, footer{
+            background-color: #303841;
+        }
+        #contact{
+            padding: 0 2rem;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        #contact p{
+            font-style: italic;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+        .contact-links{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 980px;
+            margin-top: 4rem;
+        }
+        .btn, footer a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+        .btn{
+            font-size: 2.4rem;
+            text-shadow: 2px 2px 1px #1f1f1f;
+            transition: transform 0.3s ease-out;
+        }
+        .btn:hover{
+            transform: translateY(8px);
+        }
+        footer{
+            border-top: 4px solid#be3144;
+            font-weight: 300;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer > p{
+            margin: 2rem;
+        }
+        footer i{
+            vertical-align: middle;
+        }
